@@ -1,28 +1,56 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <h1 class="a">A</h1>
+    <h1 class="b">B</h1>
+    <h1 class="c">C</h1>
+    <h1 class="d">D</h1>
+    <h1 class="e">E</h1>
+    <h1 class="f">F</h1>
+    <h1 class="g">G</h1>
   </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+<style scoped>
+div {
+  display: flex;
+  justify-content: center;
   }
-}
-</script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.a {
+  animation: animation 1s ease infinite alternate;
+}
+
+.b {
+  animation: animation 1s ease infinite alternate;
+  animation-delay: 0.1s;
+}
+
+.c {
+  animation: animation 1s ease infinite alternate;
+  animation-delay: 0.2s;
+}
+
+.d {
+  animation: animation 1s ease infinite alternate;
+  animation-delay: 0.3s;
+}
+
+.e {
+  animation: animation 1s ease infinite alternate;
+  animation-delay: 0.4s;
+}
+
+.f {
+  animation: animation 1s ease infinite alternate;
+  animation-delay: 0.5s;
+}
+
+.g {
+  animation: animation 1s ease infinite alternate;
+  animation-delay: 0.6s;
+}
+@keyframes animation {
+  0% {transform: translateY(0px);}
+  100% {transform: translateY(-10px);}
 }
 </style>
